@@ -1,0 +1,61 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px #ccc;
+  margin-top: 20px;
+}
+
+h1, h3 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  width: 100%;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1a252f;
+}
+
+#results {
+  margin-top: 30px;
+  padding: 15px;
+  background: #ecf0f1;
+  border-radius: 5px;
+}
