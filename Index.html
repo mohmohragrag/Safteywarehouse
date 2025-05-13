@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تحليل أمان الإطار البلت أب</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>تحليل أمان الإطار البلت أب</h1>
+    <form id="frameForm">
+      <h3>بيانات الرافتـر (Rafter):</h3>
+      <div class="input-group">
+        <label>عرض الفلانجة bf_r (مم)</label><input type="number" id="bf_r" required>
+        <label>سمك الفلانجة tf_r (مم)</label><input type="number" id="tf_r" required>
+        <label>سمك الويب tw_r (مم)</label><input type="number" id="tw_r" required>
+        <label>ارتفاع الويب hw_r (مم)</label><input type="number" id="hw_r" required>
+      </div>
+
+      <h3>بيانات العمود (Column):</h3>
+      <div class="input-group">
+        <label>عرض الفلانجة bf_c (مم)</label><input type="number" id="bf_c" required>
+        <label>سمك الفلانجة tf_c (مم)</label><input type="number" id="tf_c" required>
+        <label>سمك الويب tw_c (مم)</label><input type="number" id="tw_c" required>
+        <label>ارتفاع الويب hw_c (مم)</label><input type="number" id="hw_c" required>
+      </div>
+
+      <h3>بيانات الجملون:</h3>
+      <div class="input-group">
+        <label>ارتفاع العمود H (متر)</label><input type="number" id="H" required>
+        <label>أقصى ارتفاع للجملون H_total (متر)</label><input type="number" id="H_total" required>
+        <label>الفتحة span (متر)</label><input type="number" id="span" required>
+        <label>المسافة بين الفريمات spacing (متر)</label><input type="number" id="spacing" required>
+        <label>الحمل على السقف load_area (kN/m²)</label><input type="number" id="load_area" required>
+        <label>مقاومة الخضوع fy (MPa)</label><input type="number" id="fy" value="355" required>
+        <label>معامل يونج E (MPa)</label><input type="number" id="E" value="210000" required>
+        <label>معامل الأمان FS</label><input type="number" id="FS" value="1.5" required>
+        <label>معامل الطول الفعال K</label><input type="number" id="K" value="1.0" required>
+      </div>
+
+      <button type="submit">احسب الأمان</button>
+    </form>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
